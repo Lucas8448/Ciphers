@@ -2,10 +2,12 @@
 <template>
   <div class="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
     <div class="sm:mx-auto sm:w-full sm:max-w-sm flex flex-col items-center">
-      <button data-text="Awesome" class="button">
-        <span class="actual-text">&nbsp;Ciphers&nbsp;</span>
-        <span class="hover-text" aria-hidden="true">&nbsp;Ciphers&nbsp;</span>
-      </button>
+      <router-link to="/">
+        <button data-text="Awesome" class="button">
+          <span class="actual-text">&nbsp;Ciphers&nbsp;</span>
+          <span class="hover-text" aria-hidden="true">&nbsp;Ciphers&nbsp;</span>
+        </button>
+      </router-link>
       <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
         Login to your account
       </h2>
