@@ -37,7 +37,7 @@
                 <span class="absolute -inset-1.5" />
                 <span class="sr-only">Open user menu</span>
                 <img class="h-8 w-8 rounded-full"
-                  src="../assets/placeholder_user.png"
+                  src="../assets/images/placeholder_user.png"
                   alt="" />
               </MenuButton>
             </div>
