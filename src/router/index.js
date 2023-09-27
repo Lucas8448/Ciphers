@@ -4,6 +4,10 @@ import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import Portal from '../views/Portal.vue'
 import Notfound from '../views/Notfound.vue'
+import Friends from '../views/portal/Friends.vue'
+import Home from '../views/portal/Home.vue'
+import Profile from '../views/portal/Profile.vue'
+import Settings from '../views/portal/Settings.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,7 +25,25 @@ const router = createRouter({
     {
       path: '/portal',
       name: 'portal',
-      component: Portal
+      component: Portal,
+      children: [
+        {
+          path: 'home',
+          component: Home
+        },
+        {
+          path: 'friends',
+          component: Friends
+        },
+        {
+          path: 'profile',
+          component: Profile
+        },
+        {
+          path: 'settings',
+          component: Settings
+        }
+      ]
     },
     {
       path: '/register',
