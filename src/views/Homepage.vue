@@ -7,9 +7,15 @@
           <br class="hidden lg:inline-block">to talk
         </h1>
         <p class="mb-8 leading-relaxed">Tired of chat services taking your data without your permission, or not using secure protocols and encryptions. Look no further.</p>
-        <div class="flex justify-center">
-          <button href="/register" class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-400 rounded text-lg">Register</button>
-          <button href="/login" class="ml-4 inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-400 rounded text-lg">Login</button>
+        <div class="flex justify-center space-x-4">
+          <router-link to="/register"
+            class="rounded-md bg-green-500 px-4 py-2 text-sm font-semibold text-white shadow-md hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+            Register
+          </router-link>
+          <router-link to="/login"
+            class="rounded-md bg-green-500 px-4 py-2 text-sm font-semibold text-white shadow-md hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+            Login
+          </router-link>
         </div>
       </div>
       <button data-text="Awesome" class="button">
