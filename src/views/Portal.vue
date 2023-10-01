@@ -80,7 +80,7 @@
 import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
+import { BellIcon } from '@heroicons/vue/24/outline'
 
 const route = useRoute()
 

@@ -55,12 +55,14 @@
 
 <script setup>
 import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 
 const email = ref('');
 const password = ref('');
+const router = useRouter();
 
 const handleSubmit = () => {
-  // Implement your login logic here
   console.log(`Email: ${email.value}, Password: ${password.value}`);
+  router.push('/portal/home');
 };
 </script>
